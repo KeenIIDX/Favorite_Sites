@@ -20,7 +20,7 @@ with_jquery(function($) {
 	// Just adding some handy functions for later.
 	NodeList.prototype.forEach = HTMLCollection.prototype.forEach = Array.prototype.forEach;
 
-	var prefix = "favSitesTest";
+	var prefix = "favSites";
 	function setStorage (key, value) {
 		localStorage.setItem(prefix + key, JSON.stringify(value));
 	}
