@@ -167,12 +167,11 @@ with_jquery(function($) {
 			favSites.forEach(toggleEdit);
 		}
 		
-		if (e.target.classList.contains("site")) {
-			// Remove clicked-on site.
-		
+		if (e.target.classList.contains("editSite")) {
 			// Mark the clicked item.
 			e.target.style.fontStyle = "italic";
 			
+			// Remove clicked-on site.
 			removeSite(e.target);
 		}
 		
